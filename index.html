@@ -70,7 +70,7 @@
             </div>
         </div>
         <div class="page">
-            <div id="containerMenu" class="container m-2">
+            <div id="containerMenu" class="container-fluid m-2">
                 <div class="welcome">
                     <h2>Welcome to Planti,</h2>
                     <p>I hope you enjoy it</p>
@@ -82,16 +82,11 @@
                         </button>
                     </div>
                     <input class="form-control" type="text" placeholder="Pesquisar">
-                    <div class="input-group-append">
-                        <button class="divIconSearch btn btn-outline-secondary">
-                            <ion-icon name="ellipsis-vertical-outline"></ion-icon>
-                        </button>
-                    </div>
                 </div>
                 <div class="userTools">
                     <div class="dropdown">
-                        <button class="btn" id="dropDownAnexo" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
+                        <button class="btn" id="dropDownAnexo" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
                             <ion-icon name="document-text-outline"></ion-icon>
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropDownAnexo">
@@ -101,8 +96,8 @@
                         </div>
                     </div>
                     <div class="dropdown">
-                        <button class="btn" id="dropDownNotification" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
+                        <button class="btn" id="dropDownNotification" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
                             <ion-icon name="notifications"></ion-icon>
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropDownNotification">
@@ -112,8 +107,8 @@
                         </div>
                     </div>
                     <div class="dropdown">
-                        <button class="btn" id="dropDownUser" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
+                        <button class="btn" id="dropDownUser" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
                             <ion-icon name="person-circle-outline"></ion-icon>
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropDownUser">
@@ -123,6 +118,30 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="carouselContainer">
+                <div id="noticiaCarousel" class="carousel slide imgSize2" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#noticiaCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#noticiaCarousel" data-slide-to="1"></li>
+                        <li data-target="#noticiaCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://www.felizcomavida.com/wp-content/uploads/2020/10/Feliz_Peperomia.png"
+                                class="imgSize d-block mx-auto" alt="planta">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.felizcomavida.com/wp-content/uploads/2020/10/Feliz_Peperomia.png"
+                                class="imgSize d-block mx-auto" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.felizcomavida.com/wp-content/uploads/2020/10/Feliz_Peperomia.png"
+                                class="imgSize d-block mx-auto" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="sobreItem"></div>
             </div>
         </div>
     </section>
