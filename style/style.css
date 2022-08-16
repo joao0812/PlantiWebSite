@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.btHome a {
+    text-decoration: none;
+    color: black;
+}
+:root {
+    --verde1: #295D09;
+    --verde2: #69AB3D;
+    --verde3: #AED36C;
+    --branco: #E9EBED;
+}
+
+.homePage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.tools, .settings {
+    gap: 10px;
+}
+.btHome {
+    display: flex;
+    gap: 20px;
+    height: 40px;
+    
+}
+.btHome ion-icon {
+    margin-left: 16px;
+    font-size: 19px;
+    cursor: pointer;
+}
+.btHome:hover a {
+    text-decoration: none;
+    color: black;
+}
+.btHome:hover {
+    color: #69AB3D;
+    border-left: 6px solid var(--verde2);
+}
+.actived {
+    color: #69AB3D;
+    text-decoration: none;
+    border-left: 6px solid var(--verde2);
+}
+
+.tool {
+    width: 68px;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 0 3px rgba(0, 0, 0, 0.2);
+}
+.line {
+    width: 90%;
+    height: 2px;
+    background-color: lightgrey;
+}
+.titulo {
+    margin-top: 10px;
+    width: 90%;
+}
+.titulo p {
+    color: black;
+    font-weight: 600;
+}
+.page {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.logo {
+    position: relative;
+}
+.openTools {
+    right: 0;
+    color: black;
+    width: 28px;
+    height: 28px;
+    position: relative;
+}
+.textoToolBar {
+    display: none;
+}
+#setting, #help {
+    opacity: 0;
+}
+#logoIMG {
+    display: none;
+    justify-content: center;
+}
+
+#menuOutlineClose {
+    top: 0;
+    right: 0;
+    transform: scale(1);
+    cursor: pointer;
+    transition: .8s;
+}
+#menuOutlineOpen {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(0);
+    cursor: pointer;
+    transition: .8s;
+}
+
+.msgHelp {
+    width: 60%;
+    height: 250px;
+    border-radius: 15px;
+    border: 4px solid var(--verde2);
+}
+#containerMenu {
+    display: flex;
+    justify-content: space-between;
+}
+
+#search {
+    width: 320px;
+}
+#search input {
+    border: 1px solid gray;
+}
+.divIconSearch {
+    height: 38px;
+}
+.welcome {
+    font-family: 'Lobster', cursive;
+}
+.welcome p {
+    letter-spacing: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.userTools {
+    display: flex;
+    gap: 5px;
+}
+.userTools button {
+    border-radius: 12px;
+    border: 2px solid gray;
+}
+.userTools button:hover {
+    border: 2px solid var(--branco);
+    background-color: var(--verde2);
+    color: var(--branco);
+}
